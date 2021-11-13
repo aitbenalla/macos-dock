@@ -1,0 +1,41 @@
+body {
+    background: #ffffff url('./images/wall.jpg') no-repeat center center;
+    background-size: cover;
+    font-family: sans-serif;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
+.dock-wrap {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.dock {
+    display: flex;
+}
+
+.dock-icon {
+    width: 64px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform-origin: center bottom;
+}
+
+.dock-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.dock.animated .dock-icon {
+    transition: .1s;
+    transition-property: transform transform-origin;
+}
